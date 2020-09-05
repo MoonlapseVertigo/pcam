@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1079660159278",
+    "firebase_url": "https://plexcam-44425.firebaseio.com",
+    "project_id": "plexcam-44425",
+    "storage_bucket": "plexcam-44425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079660159278:android:c9a84a97f3c18508575abf",
+        "android_client_info": {
+          "package_name": "com.example.plexcam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079660159278-dv1gc7c85hiudiqeajl0he24la0ubdlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZFM8sK8-9reqRMMxPfJIRlq72RtXOPfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079660159278-dv1gc7c85hiudiqeajl0he24la0ubdlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
