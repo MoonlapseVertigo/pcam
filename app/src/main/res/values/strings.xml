@@ -15,4 +15,5 @@
     <string name="not_registered_yet_register_here">Not registered yet? Register here</string>
     <string name="sign_up">SIGN UP</string>
     <string name="already_registered_login_here">Already registered? Login here</string>
+    <string name="google_maps_key">AIzaSyA929Sa9usyKpVWY-stjKExe8_jbLFNiLY</string>
 </resources>

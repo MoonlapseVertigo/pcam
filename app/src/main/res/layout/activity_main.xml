@@ -1,71 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/mainbg"
     android:orientation="vertical"
 
-    >
-    <TextView
-        android:id="@+id/userEmail"
-        android:layout_width="100dp"
-        android:layout_height="20dp"
+    tools:context=".MainActivity">
 
-        />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:onClick="ShootAndDetect"
-        android:text="shoot and detect" />
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="49dp"
+        android:background="@drawable/cameraic"
+        android:onClick="ShootAndDetect" />
+
     <Button
         android:id="@+id/galleryImport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+
+        android:layout_alignParentTop="true"
         android:layout_gravity="center_horizontal"
-
-        android:text="Import from Gallery" />
-
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/galleryic" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="182dp"
+        android:layout_height="94dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:src="@mipmap/ic_launcher_round" />
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="58dp"
+        android:src="@drawable/awaitingic" />
 
     <TextView
 
         android:id="@+id/getLocation"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="1dp"
 
 
-        android:text="Location :" />
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="11dp"
+        android:text="Location :"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:textSize="20sp" />
+
     <ScrollView
         android:id="@+id/SCROLLER_ID"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scrollbars="vertical"
-        >
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="3dp"
+        android:scrollbars="vertical">
+
         <TextView
 
             android:id="@+id/results"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-
-
             android:layout_weight="1.0"
-            android:text="Results:" />
+            android:text="Results:"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:textSize="20sp" />
+
     </ScrollView>
 
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="407dp"
+        android:layout_height="283dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-36dp" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="159dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
 
 
-</LinearLayout>
+</RelativeLayout>
